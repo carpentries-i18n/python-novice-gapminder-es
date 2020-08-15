@@ -27,7 +27,7 @@ con Python mismo.
 * Muchas bibliotecas adicionales están disponibles en [PyPI][pypi] (el índice de paquetes de Python).
 * Más tarde veremos cómo escribir nuevas bibliotecas.
 
-## Bibliotecas y módulos
+> ## Bibliotecas y módulos
 >
 > Una biblioteca es una colección de módulos, pero los términos a menudo se usan
 > indistintamente, especialmente porque muchas bibliotecas consisten de un solo
@@ -356,7 +356,7 @@ porque los lectores deberán aprender los alias de tu programa.
 > {: .solution}
 {: .challenge}
 
-> # # Leyendo mensajes de error
+> ## Leyendo mensajes de error
 >
 > 1. Lee el código acá abajo e intenta identificar cuáles son los errores que tiene sin correrlo.
 > 2. Corre el código y lee el mensaje de error. ¿Qué tipo de error es?

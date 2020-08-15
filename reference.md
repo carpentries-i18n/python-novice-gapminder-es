@@ -1,7 +1,7 @@
 ---
 layout: reference
-permalink: /reference/
-root: ..
+permalink: /es/reference/
+root: /es/_episodes/
 ---
 
 ## Referencia

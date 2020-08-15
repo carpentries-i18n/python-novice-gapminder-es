@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "Configuración"
-permalink: /setup/
-root: ..
+permalink: /es/setup/
+root: /es/_episodes/
 ---
 
 ## Instalando Python usando Anaconda
@@ -72,7 +72,7 @@ Si encuentras alguna dificultad, por favor solicite ayuda antes de que comience 
 
 Los datos que usaremos están tomados del conjunto de datos [gapminder][gapminder].
 Para obtenerlos, descarga y descomprime el archivo
-[python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip).
+[python-novice-gapminder-data.zip]({{ site.baseurl }}/files/python-novice-gapminder-data.zip).
 Para seguir el material presentado, debes iniciar el servidor JupyterLab
 en el directorio raíz (consulta [Starting JupyterLab] (iniciando JupyterLab)({{ page.root }}/01-run-quit/#starting-jupyterlab)).
 

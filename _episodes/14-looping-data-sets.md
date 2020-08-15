@@ -6,7 +6,7 @@ questions:
 - "¿Cómo puedo procesar muchos data sets con un solo comando?"
 objectives:
 - "Ser capaz de leer y escribir expresiones globales que coincidan con conjuntos de archivos."
-- "Uso de "glob" para crear listas de archivos."
+- "Uso de 'glob' para crear listas de archivos."
 - "Escribir bucles para realizar operaciones en archivos dando sus nombres en una lista."
 keypoints:
 - "Usar un bucle `for` para procesar el archivos dando una lista de sus nombres."

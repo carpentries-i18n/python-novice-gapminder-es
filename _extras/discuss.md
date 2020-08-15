@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Discusión"
-permalink: /discuss/
+permalink: /es/discuss/
 ---
 FIXME: discusión general y lecturas adicionales para aprendices.
 

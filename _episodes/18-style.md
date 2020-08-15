@@ -1,3 +1,4 @@
+---
 title: "Estilo de Programación"
 teaching: 15
 exercises: 15
@@ -8,10 +9,11 @@ questions:
 objetives:
 - "Dar argumentos para las reglas básicas de estilo de programación."
 - "Re-formatear programas de una página para hacerlos más fáciles de leer y justificar los cambios."
-- "Seguir los estándares comunitarios de estilo de Python (PEP-8).
+- "Seguir los estándares comunitarios de estilo de Python (PEP-8)."
 keypoints:
 - "Sigue el formato estándar de Python en tu código."
 - "Utiliza docstrings para proveer ayuda integrada."
+---
 
 ## Estilo de programación
 

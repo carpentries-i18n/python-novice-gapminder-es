@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Ejercicios adicionales"
-permalink: /exercises/
+permalink: /es/exercises/
 ---
 FIXME: ejercicios que no tienen cabida en el programa regular.
 

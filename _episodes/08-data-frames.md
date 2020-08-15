@@ -1,18 +1,19 @@
--- title: "Pandas DataFrames
+---
+title: "DataFrames de Pandas"
 teaching: 15
 exercises: 15
-question: 
-"Como puedo hacer análisis estadístico con datos tabulares"
+questions: 
+- "¿Cómo puedo hacer análisis estadístico con datos tabulares?"
 objetives:
 - "Seleccionar valores individuales de un DataFrame de Pandas"
 - "Seleccionar filas enteras o columnas enteras de un DataFrame"
-- "Seleccionar un subconjunto de ambas filas y columnas de un DataFrame en una operación singular.
-- Seleccionar un subconjunto de un DataFrame por un booleano singular"
+- "Seleccionar un subconjunto de ambas filas y columnas de un DataFrame en una operación singular."
+- "Seleccionar un subconjunto de un DataFrame por un booleano singular"
 keypoints: 
--"Usa `DataFrame.iloc[...,...]`para seleccionar valores por su localización entera"
--"Usa `:` solo,  para referirte a todas las columnas o a todos los renglones"
--"Selecciona múltiples columnas o filas usando `DataFrame.loc` y un segmento con nombre. "
--" El resultado de cortar puede ser usado en operaciones adicionales"
+- "Usa `DataFrame.iloc[...,...]`para seleccionar valores por su localización entera"
+- "Usa `:` solo,  para referirte a todas las columnas o a todos los renglones"
+- "Selecciona múltiples columnas o filas usando `DataFrame.loc` y un segmento con nombre. "
+- "El resultado de cortar puede ser usado en operaciones adicionales"
 - "Usa comparaciones para seleccionar datos basados en un valor"
 - "Selecciona valores de NaN usando mascaras booleanas"
 ---

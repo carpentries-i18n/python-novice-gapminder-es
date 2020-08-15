@@ -1,16 +1,17 @@
 ---
 layout: page
 title: "Diseño de la lección"
-permalink: /design/
+permalink: /es/design/
+root: /es/_episodes/
 ---
 
 > ## Se busca ayuda
 > {:.no_toc}
 >
-> ** Estamos completando los ejercicios [a continuación] (# etapa-3-plan-de-enseñanza)
+> **Estamos completando los ejercicios [a continuación](#etapa-3-plan-de-aprendizaje)
 > para hacer que el plan de la lección sea más concreto.
-> Las contribuciones (tanto en forma de **pull request** con ejercicios completados,
-> y comentarios sobre ejercicios específicos, orden y horarios) son muy apreciadas. **
+> Las contribuciones (tanto en forma de *pull request* con ejercicios completados,
+> y comentarios sobre ejercicios específicos, orden y horarios) son muy apreciadas.**
 {: .callout}
 
 ## Proceso utilizado
@@ -28,7 +29,7 @@ Esta lección fue desarrollada usando una variante reducida del proceso "Compren
 Las secciones principales son:
 
 1. Suposiciones sobre la audiencia, tiempo, etc.
-(El borrador actual también incluye algunas conclusiones y decisiones en  
+(El borrador actual también incluye algunas conclusiones y decisiones en
 esta sección, que deben ser consideradas).
 
 2.   Resultados deseados:
@@ -160,7 +161,7 @@ de los que ellas hacen
     *   Rastrear la ejecución de intercambio de código de dos valores usando variables intermedias.
     *   Predecir el valor final de una variable después de varias asignaciones.
     *   ¿Qué pasa si tratas de indexar un número?
-    *   ¿Qué nombre es mejor para una variable `m`, `min`, or `minutos`?
+    *   ¿Qué nombre es mejor para una variable `m`, `min`, o `minutos`?
     *   ¿Qué producen los siguentes cortes?
 
 ### [Tipos de Datos y Conversión de tipo de datos]({{page.root}}/03-types-conversion/) (09:35)
@@ -191,7 +192,7 @@ de los que ellas hacen
     *   Describe correctamente situaciones en las que ocurren **SyntaxError** y **NameError**.
 *   Desafíos: 10 min
     *   Explica el orden de las operaciones en la siguiente expresión compleja.
-    *    ¿Qué producirá cada combinación anidada de llamadas `min` y` max`?
+    *    ¿Qué producirá cada combinación anidada de llamadas `min` y `max`?
     *   ¿Por qué `max` y `min` no devuelven `None` cuando no se presentan argumentos?
     *   Dado lo que hemos visto hasta ahora,
          ¿Qué expresión de índice obtendrá el último carácter en una secuencia de caracteres?
@@ -233,7 +234,7 @@ de los que ellas hacen
     *   Escribir una expresión para encontrar el PIB per cápita de Serbia en 2007.
     *   ¿Qué regla rige lo que se incluye (o no) en cortes numéricos y con nombre en Pandas?
     *   ¿Qué hace cada línea en el siguiente programa corto?
-    *  ¿Qué hacen `idxmin` e` idxmax`?
+    *  ¿Qué hacen `idxmin` e `idxmax`?
     *   Escriba expresiones para obtener el PIB per cápita para todos los países en 1982,
     para todos los países *después de* 1985,
     etc.

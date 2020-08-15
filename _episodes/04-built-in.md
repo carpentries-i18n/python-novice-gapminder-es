@@ -15,7 +15,7 @@ objectives:
 keypoints:
 - "Usar comentarios para agregar documentación a los programas."
 - "Una función puede tomar cero o más argumentos."
-- "Las funciones incorporadas de uso común incluyen `max`,` min` y `round`."
+- "Las funciones incorporadas de uso común incluyen `max`, `min` y `round`."
 - " Las funciones solo pueden funcionar para ciertos (combinaciones de) argumentos."
 - " Las funciones pueden tener valores predeterminados para algunos argumentos."
 - " Usa la función incorporada `help` para obtener ayuda para una función."
@@ -25,7 +25,7 @@ keypoints:
 - "Python reporta un error de tiempo de ejecución cuando algo sale mal mientras se ejecuta un programa."
 - "Soluciona errores de sintaxis leyendo el código fuente y errores de tiempo de ejecución rastreando la ejecución del programa."
 ---
-##  Usa comentarios para agregar documentación a los programas.
+## Usa comentarios para agregar documentación a los programas.
 
 ~~~
 # Esta oración no es ejecutada por Python.
@@ -57,7 +57,7 @@ after
 ~~~
 {: .output}
 
-## Las funciones incorporadas de uso común incluyen `max`,` min` y `round`.
+## Las funciones incorporadas de uso común incluyen `max`, `min` y `round`.
 
 *   Usa `max` para encontrar el valor más grande de uno o más valores.
 *   Usa `min` para encontrar el más pequeño.

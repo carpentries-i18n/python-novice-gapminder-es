@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Licencias"
-root: .
 ---
 ### Material didáctico
 

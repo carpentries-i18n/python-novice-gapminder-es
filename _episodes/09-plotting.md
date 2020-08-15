@@ -13,7 +13,8 @@ keypoints:
 - "Grafica datos directamente desde un **dataframe** de Pandas."
 - "Selecciona y transforma datos, luego grafícalos."
 - "Muchos estilos de gráfico están disponibles: ve la [Galería de Gráficos de Python](https://python-graph-gallery.com/matplotlib/) para más opciones."
--"Puedes graficar muchos conjuntos de datos juntos."
+- "Puedes graficar muchos conjuntos de datos juntos."
+---
 ## [`matplotlib`](https://matplotlib.org/) es la biblioteca de graficado científico más utilizada en Python.
 
 * Comúnmente usa una sub-biblioteca llamada [`matplotlib.pyplot`](https://matplotlib.org/api/pyplot_api.html).
@@ -37,7 +38,7 @@ plt.ylabel('Position (km)')
 ~~~
 {: .language-python}
 
-![Gráfica simple de Posición-Tiempo](../fig/9_simple_position_time_plot.svg)
+![Gráfica simple de Posición-Tiempo]({{ site.baseurl }}/fig/9_simple_position_time_plot.svg)
 ## Graficar datos directamente desde un [`dataframe` de Pandas](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html).
 
 * También podemos graficar [marcos de datos de Pandas](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html).
@@ -64,7 +65,7 @@ data.loc['Australia'].plot()
 ~~~
 {: .language-python}
 
-![Gráfico del PIB de Australia](../fig/9_gdp_australia.svg)
+![Gráfico del PIB de Australia]({{ site.baseurl }}/fig/9_gdp_australia.svg)
 ## Selecciona y transforma los datos, luego lo graficas.
 
 *   Por defecto, [`DataFrame.plot`](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.plot.html#pandas.DataFrame.plot) grafica con las filas como el eje X .
@@ -76,7 +77,7 @@ plt.ylabel('PIB per capita')
 ~~~
 {: .language-python}
 
-![Gráfico del PIB de Australia y Nueva Zelanda](../fig/9_gdp_australia_nz.svg)
+![Gráfico del PIB de Australia y Nueva Zelanda]({{ site.baseurl }}/fig/9_gdp_australia_nz.svg)
 ## Varios estilos de gráficos están disponibles.
 
 *   Por ejemplo, hacer un diagrama de barras usando un estilo mas elegante.
@@ -88,7 +89,7 @@ plt.ylabel('GDP per capita')
 ~~~
 {: .language-python}
 
-![Diagrama de barras del PIB de Australia](../fig/9_gdp_bar.svg)
+![Diagrama de barras del PIB de Australia]({{ site.baseurl }}/fig/9_gdp_bar.svg)
 
 ## Los datos pueden ser también graficados llamando a la función `plot` de `matplotlib`  directamente.
 *   El comando es `plt.plot(x, y)`
@@ -104,7 +105,7 @@ plt.plot(years, gdp_australia, 'g--')
 ~~~
 {: .language-python}
 
-![Gráfico formateado del PIB para Australia](../fig/9_gdp_australia_formatted.svg)
+![Gráfico formateado del PIB para Australia]({{ site.baseurl }}/fig/9_gdp_australia_formatted.svg)
 
 ## Se puede trazar varios conjuntos de datos juntos.
 
@@ -151,7 +152,7 @@ plt.ylabel('GDP per capita ($)')
 {: .callout}
 
 
-![Gráfica formateada del PIB para Australia y Nueva Zelanda](../fig/9_gdp_australia_nz_formatted.svg)
+![Gráfica formateada del PIB para Australia y Nueva Zelanda]({{ site.baseurl }}/fig/9_gdp_australia_nz_formatted.svg)
 * Grafica un diagrama de dispersión que correlacione el PIB de Australia y Nueva Zelanda
 * Utiliza `plt.scatter` o `DataFrame.plot.scatter`
 
@@ -160,13 +161,13 @@ plt.scatter(gdp_australia, gdp_nz)
 ~~~
 {: .language-python}
 
-![Correlación del PIB utilizando plt.scatter](../fig/9_gdp_correlation_plt.svg)
+![Correlación del PIB utilizando plt.scatter]({{ site.baseurl }}/fig/9_gdp_correlation_plt.svg)
 ~~~
 data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 ~~~
 {: .language-python}
 
-![Correlación del PIB utilizando data.T.plot.scatter](../fig/9_gdp_correlation_data.svg)
+![Correlación del PIB utilizando data.T.plot.scatter]({{ site.baseurl }}/fig/9_gdp_correlation_data.svg)
 
 > ## Mínimo y Máximo
 >
@@ -193,7 +194,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > > plt.xticks(rotation=90)
 > > ~~~
 > > {: .language-python}
-> > ![Minima Maxima Solución](../fig/9_minima_maxima_solution.png)
+> > ![Minima Maxima Solución]({{ site.basurl }}/fig/9_minima_maxima_solution.png)
 > {: .solution}
 {: .challenge}
 
@@ -212,7 +213,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 >
 > > ## Solución
 > >
-> > ![Correlaciones Solución 1](../fig/9_correlations_solution1.svg)
+> > ![Correlaciones Solución 1]({{ site.baseurl }}/fig/9_correlations_solution1.svg)
 > >
 > > No se pueden ver correlaciones particulares entre los valores mínimos y máximos de PIB
 > > año a año. Parece que las fortunas de los países asiáticos no suben ni bajan juntas.
@@ -229,7 +230,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > ~~~
 > {: .language-python}
 > > ## Solución
-> > ![Correlaciones Solución 2](../fig/9_correlations_solution2.png)
+> > ![Correlaciones Solución 2]({{ site.baseurl }}/fig/9_correlations_solution2.png)
 > >
 > > Parece que la variabilidad en este valor se debe a una fuerte caída después de 1972.
 > > ¿Alguna geopolítica en juego quizás? Dado el dominio de los países productores de petróleo,
@@ -256,7 +257,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > explica lo que hace cada argumento para `plot`.
 >
 > > ## Solución
-> > ![Solución de Más Correlaciones](../fig/9_more_correlations_solution.svg)
+> > ![Solución de Más Correlaciones]({{ site.baseurl }}/fig/9_more_correlations_solution.svg)
 > >
 > > Un buen lugar para buscar es la documentación para la función plot -
 > > help(data_all.plot).

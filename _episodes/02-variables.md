@@ -128,7 +128,7 @@ Age in three years: 45
 *   Los índices están numerados a partir del 0.
 *   Usa el índice de la posición entre corchetes para obtener el carácter en esa posición.
 
-![an illustration of indexing](../fig/2_indexing.svg)
+![representación gráfica de como funciona el indexado]({{ site.baseurl }}/fig/2_indexing.svg)
 
 ~~~
 atom_name = 'helium'
@@ -182,7 +182,7 @@ print(len('helium'))
 ## Python distingue mayúsculas de minúsculas
 
 *   Python piensa que las letras mayúsculas y minúsculas son diferentes,
-   así que `Nombre` y` nombre` son variables diferentes.
+    así que `Nombre` y `nombre` son variables diferentes.
 *   Existen convenciones para usar letras mayúsculas al comienzo de los nombres de las variables, por ahora nosotros usaremos letras minúsculas.
 
 ## Usa nombres de variables significativos.
@@ -228,7 +228,7 @@ print(ewr_422_yY, 'tiene', flabadab, 'años')
 > > 
 > > Estas tres líneas intercambian los valores en `x` e` y` usando la variable `swap`
 > > como almacenamiento temporario. Esto es bastante común en lenguajes de programación.
->{: .solución}
+>{: .solution}
 {: .challenge}
 
 > ## Predicción de Valores
@@ -255,7 +255,7 @@ print(ewr_422_yY, 'tiene', flabadab, 'años')
 >> como valor la secuencia de caracteres `'left'`. En la tercera línea, la variable `initial` toma el valor
 >>  `'right'`, y la variable `position` conserva su valor de secuencia de caracteres
 >>  `'left'`.
->{: .solución}
+>{: .solution}
 {: .challenge}
 
 > ## Desafío

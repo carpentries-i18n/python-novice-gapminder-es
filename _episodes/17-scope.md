@@ -5,12 +5,12 @@ exercises: 10
 questions:
 - "¿Cómo trabajan realmente las llamadas a funciones?"
 - "Cómo puedo determinar donde ocurrieron los errores?"
-objectivos:
-- "Identificar variables locales y globales".
-- "Identificar parámetros como variables locales".
-- "Lea un registro de rastreo y determine el archivo, la función y el número de línea en que ocurrió el error, el tipo de error y el mensaje de error".
-puntos clave:
-- "El alcance de una variable es la parte de un programa que puede 'ver' esa variable".
+objectives:
+- "Identificar variables locales y globales."
+- "Identificar parámetros como variables locales."
+- "Lea un registro de rastreo y determine el archivo, la función y el número de línea en que ocurrió el error, el tipo de error y el mensaje de error."
+keypoints:
+- "El alcance de una variable es la parte de un programa que puede 'ver' esa variable."
 ---
 ## El alcance de una variable es la parte de un programa que puede "ver" esa variable.
 
@@ -73,7 +73,7 @@ NameError: name 'temperature' is not defined
 > {: .language-python}
 {: .challenge}
 
-> # # Leyendo mensajes de error
+> ## Leyendo mensajes de error
 >
 > Lea el registro de rastreo abajo, e identifique lo siguiente:
 >

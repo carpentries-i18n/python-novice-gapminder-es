@@ -8,7 +8,7 @@ python-principiante-gapminder
 Introducción a Python para no programadores con hincapié en visualización y análisis de datos.
 Por favor diríjase a <https://carpentries-i18n.github.io/python-novice-gapminder/>
 para ver una versión  de este material con formato,
-[la documentación de la plantilla de la lección][lección-ejemplo]
+[la documentación de la plantilla de la lección][lesson-example]
 para instrucciones de formato, compilación y envío de material,
 o corre `make` en este directorio para obtener una lista de comandos útiles.
 

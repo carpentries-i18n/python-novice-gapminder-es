@@ -245,7 +245,7 @@ print(total)
 > # Longitud total de las cadenas de texto en la lista: ["red", "green", "blue"] => 12
 > total = 0
 > for word in ["red", "green", "blue"]:
-> ____ = ____ + len(word)
+>     ____ = ____ + len(word)
 > print(total)
 > ~~~
 > {: .language-python}
@@ -253,7 +253,7 @@ print(total)
 > > ~~~
 > > total = 0
 > > for word in ["red", "green", "blue"]:
-> > total = total + len(word)
+> >     total = total + len(word)
 > > print(total)
 > > ~~~
 > > {: .language-python}
@@ -263,7 +263,7 @@ print(total)
 > # Lista de longitudes de las palabras: ["red", "green", "blue"] => [3, 5, 4]
 > lengths = ____
 > for word in ["red", "green", "blue"]:
-> lengths.____(____)
+>     lengths.____(____)
 > print(lengths)
 > ~~~
 > {: .language-python}
@@ -271,7 +271,7 @@ print(total)
 > > ~~~
 > > lengths = []
 > > for word in ["red", "green", "blue"]:
-> > lengths.append(len(word))
+> >     lengths.append(len(word))
 > > print(lengths)
 > > ~~~
 > > {: .language-python}
@@ -282,7 +282,7 @@ print(total)
 > words = ["red", "green", "blue"]
 > result = ____
 > for ____ in ____:
-> ____
+>     ____
 > print(result)
 > ~~~
 > {: .language-python}
@@ -291,11 +291,10 @@ print(total)
 > > words = ["red", "green", "blue"]
 > > result = ""
 > > for word in words:
-> > result = result + word
+> >     result = result + word
 > > print(result)
 > > ~~~
-> > {: .language-python}
- 
+> > {: .language-python} 
 > {: .solution}
 >
 > ~~~
@@ -307,7 +306,7 @@ print(total)
 > > ~~~
 > > acronym = ""
 > > for word in ["red", "green", "blue"]:
-> > acronym = acronym + word[0].upper()
+> >     acronym = acronym + word[0].upper()
 > > print(acronym)
 > > ~~~
 > > {: .language-python}
@@ -336,8 +335,8 @@ print(total)
 > > data = [1,2,2,5]
 > > cumulative = []
 > > for number in data:
-> > sum += number
-> > cumulative.append(sum)
+> >     sum += number
+> >     cumulative.append(sum)
 > > print(cumulative)
 > > ~~~
 > > {: .language-python}
@@ -376,7 +375,7 @@ print(total)
 > >         message = message + "a"
 > >     else:
 > >         message = message + "b"
-> >     print(message)
+> > print(message)
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -385,7 +384,7 @@ print(total)
 > ## Identificación de errores en los elementos
 >
 > 1. Lee el código que aparece a continuación e intenta identificar cuáles son los errores
-> *sin* ejecutarlo.
+>    *sin* ejecutarlo.
 > 2. Ejecuta el código y lee el mensaje de error. ¿Qué tipo de error es?
 > 3. Arregla el error.
 >

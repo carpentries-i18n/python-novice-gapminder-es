@@ -1,7 +1,7 @@
 ---
 layout: lesson
-root: .  # Is the only page that doesn't follow the pattern /:path/index.html
-permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
+root: /es/  # Is the only page that doesn't follow the pattern /:path/index.html
+permalink: /es/index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
 Esta lección es una introducción a la programación en Python para personas con poca o sin experiencia previa
@@ -30,7 +30,7 @@ intérprete de Python. Por favor, nota que esta lección usa Python 3 y no Pytho
 >
 > 3. Aprendices deben obtener los datos gapminder antes del comienzo de la clase:
 >    por favor descarga y descomprime el fichero
->    [python-novice-gapminder-data.zip]({{page.root}}/files/python-novice-gapminder-data.zip).
+>    [python-novice-gapminder-data.zip]({{ site.baseurl }}/files/python-novice-gapminder-data.zip).
 >
 >    Por favor consulta [las instrucciones de configuración][lesson-setup]
 >    para más detalles.

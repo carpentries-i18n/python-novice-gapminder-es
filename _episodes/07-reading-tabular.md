@@ -5,16 +5,16 @@ exercises: 10
 questions:
 - "¿Cómo puedo leer datos tabulares?"
 objectives:
-- "Importar la biblioteca Pandas ."
+- "Importar la biblioteca Pandas."
 - "Usar Pandas para cargar un conjunto de datos CSV simple."
-- "Obtener información básica sobre un DataFrame de Pandas"
+- "Obtener información básica sobre un DataFrame de Pandas."
 keypoints:
 - "Utiliza la biblioteca Pandas para obtener estadísticas básicas de los datos tabulares".
 - "Utiliza `index_col` para especificar los valores de la columna que deben usarse como fila de encabezado."
-- "Utiliza` DataFrame.info` para obtener más información sobre un dataframe."
-- "La variable` DataFrame.columns` almacena información sobre las columnas del dataframe."
-- "Utiliza` DataFrame.T` para transponer un dataframe."
-- "Utiliza` DataFrame.describe` para obtener estadísticas resumidas sobre los datos ."
+- "Utiliza `DataFrame.info` para obtener más información sobre un dataframe."
+- "La variable `DataFrame.columns` almacena información sobre las columnas del dataframe."
+- "Utiliza `DataFrame.T` para transponer un dataframe."
+- "Utiliza `DataFrame.describe` para obtener estadísticas resumidas sobre los datos."
 ---
 ## Utiliza la biblioteca Pandas para hacer estadísticas sobre datos tabulares.
 
@@ -24,8 +24,8 @@ keypoints:
         y potencialmente tienen diferentes tipos de datos.
 *   Carga con `import pandas as pd`. El alias pd se usa comúnmente para pandas.
 *   Lea un archivo de datos de valores separados por comas (CSV) con `pd.read_csv`.
-     *   Argumento es el nombre del archivo para lectura.
-     *   Asigna el resultado a una variable para almacenar los datos que se leyeron.
+  *   Argumento es el nombre del archivo para lectura.
+  *   Asigna el resultado a una variable para almacenar los datos que se leyeron.
 
 ~~~
 import pandas as pd
@@ -59,8 +59,8 @@ print(data)
 > ## Archivo no encontrado
 >
 > Nuestras lecciones almacenan sus archivos de datos en un subdirectorio `data`,
-> razón por la cual la ruta al archivo es `data / gapminder_gdp_oceania.csv`.
-> Si olvida incluir `data /`,
+> razón por la cual la ruta al archivo es `data/gapminder_gdp_oceania.csv`.
+> Si olvida incluir `data/`,
 > o si lo incluye pero su copia del archivo está en otro lugar,
 > obtendrá un [runtime error]({{ page.root }}/04-built-in/#runtime-error)
 > que termina con una línea como esta:
@@ -74,8 +74,8 @@ print(data)
 ## Utiliza `index_col` para especificar los valores de que columna deben usarse como fila de encabezado.
 
 *   Los encabezados de fila son números (0 y 1 en este caso).
-*  Indexar por país.
-*   Pase el nombre de la columna a `read_csv` como su parámetro` index_col` para hacer esto.
+*   Indexar por país.
+*   Pase el nombre de la columna a `read_csv` como su parámetro `index_col` para hacer esto.
 
 ~~~
 data = pd.read_csv('data/gapminder_gdp_oceania.csv', index_col='country')
@@ -230,9 +230,9 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > en una variable llamada `americas`
 > y muestra sus estadísticas de resumen.
 >
->> ## Solución
->> Para leer en un CSV, usamos `pd.read_csv` y le pasamos el nombre de archivo 'data/gapminder_gdp_americas.csv'. También una vez más pasamos el
->> nombre de columna 'country' al parámetro `index_col` para indexar por país:
+> > ## Solución
+> > Para leer en un CSV, usamos `pd.read_csv` y le pasamos el nombre de archivo 'data/gapminder_gdp_americas.csv'. También una vez más pasamos el
+> > nombre de columna 'country' al parámetro `index_col` para indexar por país:
 > > ~~~
 > > americas = pd.read_csv('data/gapminder_gdp_americas.csv', index_col='country')
 > > ~~~
@@ -245,24 +245,24 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > ## Inspección de datos.
 >
 > Después de leer los datos para las Américas,
-> use `help (americas.head)` y `help (americas.tail)`
-> para averiguar qué hacen `Data Frame.head` y` DataFrame.tail`.
+> use `help(americas.head)` y `help(americas.tail)`
+> para averiguar qué hacen `Data Frame.head` y `DataFrame.tail`.
 >
 > 1. ¿Qué llamado de método mostrará las primeras tres filas de estos datos?
 > 2. ¿Qué llamado de método mostrará las últimas tres columnas de estos datos?
 >    (Sugerencia: es posible que deba cambiar su vista de los datos).
 >
->> ## Solución
->> 1. Podemos ver las primeras cinco filas de `americas` ejecutando` americas.head() `(lo que nos permite ver las primeras filas
->> del DataFrame). Podemos especificar el número de filas que deseamos ver especificando el parámetro `n` en nuestra llamada
->> a `americas.head()`. Para ver las primeras tres filas, ejecute:
->>
+> > ## Solución
+> > 1. Podemos ver las primeras cinco filas de `americas` ejecutando` americas.head() `(lo que nos permite ver las primeras filas
+> > del DataFrame). Podemos especificar el número de filas que deseamos ver especificando el parámetro `n` en nuestra llamada
+> > a `americas.head()`. Para ver las primeras tres filas, ejecute:
+> >
 > > ~~~
 > > americas.head(n=3)
 > > ~~~
 > >{: .language-python}
 > > 
->> La salida es entonces
+> > La salida es entonces
 > > ~~~
 > >          continent  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \n> >country                                                               
 > >Argentina  Americas     5911.315053     6856.856212     7133.166023   
@@ -286,22 +286,22 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > >Brazil        9065.800825 
 > > ~~~ 
 > >{: .output}
->> 2. Para ver las últimas tres filas de `americas`, usaríamos el comando` americas.tail (n = 3) `,
->> análogo a `head ()` usado anteriormente. Sin embargo, aquí queremos ver las últimas tres columnas, que necesitamos
->> para cambiar nuestra vista y luego usar `tail()`. Para hacerlo, creamos un nuevo DataFrame en el que las filas y
->> las columnas se cambian
+> > 2. Para ver las últimas tres filas de `americas`, usaríamos el comando` americas.tail (n = 3) `,
+> > análogo a `head ()` usado anteriormente. Sin embargo, aquí queremos ver las últimas tres columnas, que necesitamos
+> > para cambiar nuestra vista y luego usar `tail()`. Para hacerlo, creamos un nuevo DataFrame en el que las filas y
+> > las columnas se cambian
 > > 
 > > ~~~
 > > americas_flipped = americas.T
 > > ~~~
 > >{: .language-python}
 > >
->> Podemos ver las últimas tres columnas de `americas` al ver las últimas tres filas de` americas_flipped`:
+> > Podemos ver las últimas tres columnas de `americas` al ver las últimas tres filas de` americas_flipped`:
 > > ~~~
 > > americas_flipped.tail(n=3)
 > > ~~~
 > >{: .language-python}
->> La salida es entonces
+> > La salida es entonces
 > > ~~~
 > > country        Argentina  Bolivia   Brazil   Canada    Chile Colombia  \n> > gdpPercap_1997   10967.3  3326.14  7957.98  28954.9  10118.1  6117.36   
 > > gdpPercap_2002   8797.64  3413.26  8131.21    33329  10778.8  5755.26   
@@ -321,7 +321,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > gdpPercap_2007             18008.5       42951.7  10611.5   11415.8  
 > > ~~~ 
 > >{: .output}
->> Nota: podríamos haber hecho lo anterior en una sola línea de código con 'chaining' encadenando los comandos:
+> > Nota: podríamos haber hecho lo anterior en una sola línea de código con 'chaining' encadenando los comandos:
 > > ~~~
 > > americas.T.tail(n=3)
 > > ~~~
@@ -351,12 +351,12 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > ~~~
 > {: .output}
 >
-> ¿Qué valor (es) debe pasar a `read_csv` para leer` microbes.csv` en `analysis.ipynb`?
+> ¿Qué valor(es) debe pasar a `read_csv` para leer `microbes.csv` en `analysis.ipynb`?
 > 
->> ## Solución
->> Necesitamos especificar la ruta al archivo de interés en la llamada a `pd.read_csv`. Primero necesitamos 'saltar' de
->> la carpeta `tesis` usando '../' y luego en la carpeta` field_data` usando 'field_data /'. Luego podemos especificar el nombre de archivo `microbes.csv.
->> El resultado es el siguiente:
+> > ## Solución
+> > Necesitamos especificar la ruta al archivo de interés en la llamada a `pd.read_csv`. Primero necesitamos 'saltar' de
+> > la carpeta `tesis` usando '../' y luego en la carpeta` field_data` usando 'field_data /'. Luego podemos especificar el nombre de archivo `microbes.csv.
+> > El resultado es el siguiente:
 > > ~~~
 > > data_microbes = pd.read_csv('../field_data/microbes.csv')
 > > ~~~
@@ -383,7 +383,7 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > ~~~
 > >{: .language-python}
 > > Tenga en cuenta que `help (to_csv)` produce un error! Esto es sutil y se debe al hecho de que `to_csv` NO es una función
-> >  de sí misma sino `americas.to_csv`.
+> > de sí misma sino `americas.to_csv`.
 > {: .solution}
 {: .challenge}
 

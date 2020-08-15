@@ -1,3 +1,4 @@
+---
 title: "Tipos de Datos y Conversión de Tipos"
 teaching: 10
 exercises: 10
@@ -16,6 +17,7 @@ keypoints:
 - "Se deben convertir números a secuencias de caracteres o viceversa cuando se opera con ellas."
 - "Se pueden mezclar  enteros y puntos flotantes libremente en operaciones."
 - "Las variables solo cambian de valor cuando se les asigna algo."
+---
 ## Cada valor tiene un tipo.
 
 * Cada valor en un programa tiene un tipo específico.

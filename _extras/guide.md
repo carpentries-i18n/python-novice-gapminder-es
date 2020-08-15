@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Guía para Instructores"
-permalink: /guide/
+permalink: /es/guide/
 ---
 
 ## Notas Generales
