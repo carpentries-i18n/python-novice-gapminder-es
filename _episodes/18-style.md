@@ -6,7 +6,7 @@ questions:
 - "¿Cómo puedo hacer para que mis programas sean fáciles de leer?"
 - "¿Qué formato le dan la mayoría de los programadores a su código?"
 - "¿De qué forma los programas pueden verificar su propio funcionamiento?"
-objetives:
+objectives:
 - "Dar argumentos para las reglas básicas de estilo de programación."
 - "Re-formatear programas de una página para hacerlos más fáciles de leer y justificar los cambios."
 - "Seguir los estándares comunitarios de estilo de Python (PEP-8)."
@@ -19,7 +19,7 @@ keypoints:
 
 El estilo del código nos ayuda a entender mejor el código. También ayuda a darle mantenimiento y hacer modificaciones en el código.
 Python se apoya mucho en el estilo del código como se puede ver en el sangrado que aplicamos en las líneas para definir los distintos bloques de código.
-Python propone un estilo estándar en una de las primeras Propuestas de Mejora de Python (PEP, por sus siglas en inglés), [PEP8](https://www.python.org/dev/peps/pep-0008), y resalta la importancia de la lectura de código en [Zen de Python](https://www.python.org/dev/peps/pep-0020). 
+Python propone un estilo estándar en una de las primeras Propuestas de Mejora de Python (PEP, por sus siglas en inglés), [PEP8](https://www.python.org/dev/peps/pep-0008), y resalta la importancia de la lectura de código en [Zen de Python](https://www.python.org/dev/peps/pep-0020).
 
 Podemos subrayar algunos puntos:
 * documenta tu código
@@ -38,8 +38,8 @@ Podemos subrayar algunos puntos:
     y entender como deberán de ser sus contribuciones.
     La [aplicación y biblioteca de Python PEP8](https://pypi.python.org/pypi/pep8)
     puede revisar si tu código cumple con las recomendaciones de PEP8.
-*   [La guía de estilo de código de Python de Google](https://google.github.io/styleguide/pyguide.html) 
-    da soporte al uso de PEP8 y extiende el estilo de código a una estructura más específica de 
+*   [La guía de estilo de código de Python de Google](https://google.github.io/styleguide/pyguide.html)
+    da soporte al uso de PEP8 y extiende el estilo de código a una estructura más específica de
     código en Python, que puede ser también interesante de seguir.
     ["yapf" es el nombre de la herramienta de formato de código](https://github.com/google/yapf/)  de Google.
 
@@ -109,7 +109,7 @@ average(valores)
 >
 > def maximo_general(sequencias):
 >     '''Determina la distancia máxima.'''
-> 
+>
 >     mas_alta = 0
 >     for izquierda in sequencias:
 >         for derecha in sequencias:
@@ -117,7 +117,7 @@ average(valores)
 >             if izquierda != derecha:
 >                 actual = edit_distance(izquierda, derecha)
 >                 mas_alta = max(mas_alta, actual)
-> 
+>
 >     # Reporta.
 >     return mas_alta
 > ~~~
@@ -208,12 +208,12 @@ average(valores)
 > >                 nueva += '*'
 > >         print(nueva)
 > >         # guarda la nueva cadena como la anterior
-> >         anterior = nueva   
+> >         anterior = nueva
 > >
 > > procesa_cadena('et cetera', 10)
 > > ~~~
 > > {: .language-python}
-> > 
+> >
 > > ~~~
 > > etcetera
 > > *****-***
@@ -230,4 +230,3 @@ average(valores)
 > > {: .output}
 > {: .solution}
 {: .challenge}
-

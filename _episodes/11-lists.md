@@ -6,7 +6,7 @@ questions:
 - "¿Cómo puedo almacenar múltipes valores?"
 objectives:
 - "Explicar por qué los programas necesitan colecciones de valores."
-- "Escribir programa para crear listas, ordenarlas, dividirlas y modificarlas a través de asignaciones y métodos.
+- "Escribir programa para crear listas, ordenarlas, dividirlas y modificarlas a través de asignaciones y métodos."
 keypoints:
 - "Una lista almacena muchos valores en una única estructura."
 - "Usa el índice de un elemento para buscarlo en una lista."
@@ -345,7 +345,7 @@ IndexError: string index out of range
 > > ## Solución
 > > ~~~
 > > lithium
-> > 
+> >
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -424,9 +424,8 @@ IndexError: string index out of range
 > > {: .language-python}
 > > `new = old` crea una referencia a la lista `old`; `new` y `old` apuntan
 > > al mismo objeto.
-> > 
+> >
 > > `new = old[:]`, sin embargo, crea una nueva lista `new` con todos los elementos
 > > de la lista `old`; `new` y `old` son dos objetos diferentes.
 > {: .solution}
 {: .challenge}
-
