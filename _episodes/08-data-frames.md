@@ -2,14 +2,14 @@
 title: "DataFrames de Pandas"
 teaching: 15
 exercises: 15
-questions: 
+questions:
 - "¿Cómo puedo hacer análisis estadístico con datos tabulares?"
-objetives:
+objectives:
 - "Seleccionar valores individuales de un DataFrame de Pandas"
 - "Seleccionar filas enteras o columnas enteras de un DataFrame"
 - "Seleccionar un subconjunto de ambas filas y columnas de un DataFrame en una operación singular."
 - "Seleccionar un subconjunto de un DataFrame por un booleano singular"
-keypoints: 
+keypoints:
 - "Usa `DataFrame.iloc[...,...]`para seleccionar valores por su localización entera"
 - "Usa `:` solo,  para referirte a todas las columnas o a todos los renglones"
 - "Selecciona múltiples columnas o filas usando `DataFrame.loc` y un segmento con nombre. "
@@ -20,8 +20,8 @@ keypoints:
 
 ## Nota acerca de  pandas DataFrames/Series
 
-Un  [DataFrame][pandas-dataframe] es una colección de  [Series][pandas-series]; 
-El DataFrame es la manera en que pandas representa una tabla,  y una Serie es la estructura de datos que usa 
+Un  [DataFrame][pandas-dataframe] es una colección de  [Series][pandas-series];
+El DataFrame es la manera en que pandas representa una tabla,  y una Serie es la estructura de datos que usa
 Pandas para representar una columna.
 
 Pandas esta construido en el top de la biblioteca [Numpy][numpy], la cual en la práctica significa que
@@ -129,7 +129,7 @@ Poland          5338.752143     6557.152776     8006.506993
 
 En el código de arriba, descubrimos que  **slicing usando `loc` es inclusivo en ambos
 extremos**,  lo cual  difiere de  **slicing usando `iloc`**, donde el corte indica
-todo pero sin incluir el índice final. 
+todo pero sin incluir el índice final.
 
 
 ## El Resultado de los cortes pueden ser usados en  otras operaciones.
@@ -297,22 +297,22 @@ data.groupby(wealth_score).sum()
 ~~~
 {: .language-python}
 ~~~
-          gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \n0.000000    36916.854200    46110.918793    56850.065437    71324.848786   
-0.333333    16790.046878    20942.456800    25744.935321    33567.667670   
-0.500000    11807.544405    14505.000150    18380.449470    21421.846200   
-1.000000   104317.277560   127332.008735   149989.154201   178000.350040   
+          gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \n0.000000    36916.854200    46110.918793    56850.065437    71324.848786
+0.333333    16790.046878    20942.456800    25744.935321    33567.667670
+0.500000    11807.544405    14505.000150    18380.449470    21421.846200
+1.000000   104317.277560   127332.008735   149989.154201   178000.350040
 
 
-          gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \n0.000000    88569.346898   104459.358438   113553.768507   119649.599409   
-0.333333    45277.839976    53860.456750    59679.634020    64436.912960   
-0.500000    25377.727380    29056.145370    31914.712050    35517.678220   
-1.000000   215162.343140   241143.412730   263388.781960   296825.131210   
+          gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \n0.000000    88569.346898   104459.358438   113553.768507   119649.599409
+0.333333    45277.839976    53860.456750    59679.634020    64436.912960
+0.500000    25377.727380    29056.145370    31914.712050    35517.678220
+1.000000   215162.343140   241143.412730   263388.781960   296825.131210
 
 
-          gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007  
-0.000000    92380.047256   103772.937598   118590.929863   149577.357928  
-0.333333    67918.093220    80876.051580   102086.795210   122803.729520  
-0.500000    36310.666080    40723.538700    45564.308390    51403.028210  
+          gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007
+0.000000    92380.047256   103772.937598   118590.929863   149577.357928
+0.333333    67918.093220    80876.051580   102086.795210   122803.729520
+0.500000    36310.666080    40723.538700    45564.308390    51403.028210
 1.000000   315238.235970   346930.926170   385109.939210   427850.333420
 ~~~
 {: .output}
@@ -328,7 +328,7 @@ data.groupby(wealth_score).sum()
 >
  > df = pd.read_csv ('data / gapminder_gdp_europe.csv ', index_col =' country ')
  > ~~~
- > {: .language-python} 
+ > {: .language-python}
 >
  > Escribe una expresión para encontrar el PIB per cápita de Serbia en 2007
 {: .challenge}
@@ -352,19 +352,19 @@ data.groupby(wealth_score).sum()
 > 1.  ¿Las dos instrucciones a continuación producen el mismo resultado?
 > 2.  Basados en esto,
 >    Que regla gobierna que es incluido (o no) en cortes numéricos y cortes de nombres en Pandas?
-> 
+>
 > ~~~
 > print(df.iloc[0:2, 0:2])
 > print(df.loc['Albania':'Belgium', 'gdpPercap_1952':'gdpPercap_1962'])
 > ~~~
 > {: .language-python}
 {: .challenge}
-> 
+>
 > > ## Solución
 > > No, ¡ellos no producen la misma salida! La salida de la primera instrucción es:
 > > ~~~
 > >         gdpPercap_1952  gdpPercap_1957
-> > pais                                
+> > pais
 > > Albania     1601.056136     1942.284244
 > > Austria     6137.076492     8842.598030
 > > ~~~
@@ -372,14 +372,14 @@ data.groupby(wealth_score).sum()
 > > La segunda instrucción dá:
 > > ~~~
 > >         gdpPercap_1952  gdpPercap_1957  gdpPercap_1962
-> > pais                                                
+> > pais
 > > Albania     1601.056136     1942.284244     2312.888958
 > > Austria     6137.076492     8842.598030    10750.721110
 > > Belgium     8343.105127     9714.960623    10991.206760
 > > ~~~
 > >{: .output}
-> > Claramente, la segunda instrucción produce una columna y una fila adicional comparado a la primera instrucción.  
-> >¿Qué conclusión podemos sacar? Vemos que un corte numérico, 0: 2, *omite* el índice final (es decir, el índice 2) 
+> > Claramente, la segunda instrucción produce una columna y una fila adicional comparado a la primera instrucción.
+> >¿Qué conclusión podemos sacar? Vemos que un corte numérico, 0: 2, *omite* el índice final (es decir, el índice 2)
 > > en el rango proporcionado,
 > > mientras un corte con nombre, 'gdpPercap_1952':'gdpPercap_1962', *incluye* el elemento final.
 > {: .solution}
@@ -407,36 +407,36 @@ data.groupby(wealth_score).sum()
 > > ~~~
 > > {: .language-python}
 > > Esta linea carga el set de datos conteniendo los datos del PIB (GDP) de todos los países dentro de un DataFrame llamado
-> > `first`. El parámetro `index_col='country'`  selecciona cual columna usar como las  
-> > etiquetas de las filas en el dataframe.  
+> > `first`. El parámetro `index_col='country'`  selecciona cual columna usar como las
+> > etiquetas de las filas en el dataframe.
 > > ~~~
 > > second = first[first['continent'] == 'Americas']
 > > ~~~
 > > {: .language-python}
-> > Esta linea hace una selección: solo se extraen aquellas filas de `first` para los cuales la columna 'continent' coincide con 
-> > 'Americas'. Nota como la expresión Booleana dentro de los  paréntesis, 
-> > `first['continent'] == 'Americas'`, es usada para seleccionar solo aquellas filas donde la expresión es verdadera. 
-> > Intenta imprimir esta expresión! ¿Puedes imprimir  también los valores individuales de los elementos True/False? 
+> > Esta linea hace una selección: solo se extraen aquellas filas de `first` para los cuales la columna 'continent' coincide con
+> > 'Americas'. Nota como la expresión Booleana dentro de los  paréntesis,
+> > `first['continent'] == 'Americas'`, es usada para seleccionar solo aquellas filas donde la expresión es verdadera.
+> > Intenta imprimir esta expresión! ¿Puedes imprimir  también los valores individuales de los elementos True/False?
 > > (sugerencia: Primero asigna la expresión a una variable)
 > > ~~~
 > > third = second.drop('Puerto Rico')
 > > ~~~
 > > {: .language-python}
-> > Como sugiere la sintaxis, esta linea remueve la fila de `second`  donde la etiqueta es 'Puerto Rico'. El 
+> > Como sugiere la sintaxis, esta linea remueve la fila de `second`  donde la etiqueta es 'Puerto Rico'. El
 > > resultado DataFrame `third` tiene una fila menos que el DataFrame original `second`.
 > > ~~~
 > > fourth = third.drop('continent', axis = 1)
 > > ~~~
 > > {: .language-python}
-> > Otra vez aplicamos la función drop, pero en este caso no estamos removiendo una fila sino una columna completa.  
-> > Para lograr esto, necesitamos especificar también el parámetro `axis` (queremos remover la segunda columna 
+> > Otra vez aplicamos la función drop, pero en este caso no estamos removiendo una fila sino una columna completa.
+> > Para lograr esto, necesitamos especificar también el parámetro `axis` (queremos remover la segunda columna
 > > la cual tiene el indice 1).
 > > ~~~
 > > fourth.to_csv('result.csv')
 > > ~~~
 > > {: .language-python}
-> > El paso final es escribir los datos que hemos trabajado en un archivo csv. Pandas hace esto muy facil 
-> > con la función `to_csv()`.  El único argumento requerido por la función es el nombre del archivo. Nota que el 
+> > El paso final es escribir los datos que hemos trabajado en un archivo csv. Pandas hace esto muy facil
+> > con la función `to_csv()`.  El único argumento requerido por la función es el nombre del archivo. Nota que el
 > > archivo será escrito en el directorio en el cual tu hayas iniciado la sesión de Jupyter o Python.
 > {: .solution}
 {: .challenge}
@@ -458,7 +458,7 @@ data.groupby(wealth_score).sum()
 > > Por cada columna en `data`, `idxmin` retornará el indice del valor correspondiente al mínimo de cada columna:
 > > `idxmax` hará lo mismo para el valor máximo de cada columna.
 > >
-> > Tu puedes usar estas funciones, siempre que quieras obtener el indice de la fila con el mínimo / máximo  valor y no el valor mínimo /máximo actual. 
+> > Tu puedes usar estas funciones, siempre que quieras obtener el indice de la fila con el mínimo / máximo  valor y no el valor mínimo /máximo actual.
 > {: .solution}
 {: .challenge}
 
@@ -470,7 +470,7 @@ data.groupby(wealth_score).sum()
 > 1.  GDP per capita para todos los países en 1982.
 > 2.  GDP per capita para Denmark para todos los años.
 > 3.  GDP per capita para todos los países para los años  *después de* 1985.
-> 4.  GDP per capita para cada país en 2007 como un múltiple de 
+> 4.  GDP per capita para cada país en 2007 como un múltiple de
 >     GDP per capita para aquellos países en  1952.
 {: .challenge}
 >
@@ -537,7 +537,7 @@ data.groupby(wealth_score).sum()
 > ~~~
 > {: .language-python}
 >
-> Asume que  Pandas ha sido importado y los datos del PIB (GDP) de Gapminder para Europa han sido cargados como  `data`.  Entonces, usa `dir` para encontrar la función para imprimir la media del PIB per-capita a través de todos los países Europeos  por cada año de información disponible.  
+> Asume que  Pandas ha sido importado y los datos del PIB (GDP) de Gapminder para Europa han sido cargados como  `data`.  Entonces, usa `dir` para encontrar la función para imprimir la media del PIB per-capita a través de todos los países Europeos  por cada año de información disponible.
 {: .challenge}
 >
 > > ## Solución
@@ -562,4 +562,3 @@ data.groupby(wealth_score).sum()
 [pandas-dataframe]: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
 [pandas-series]: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.Series.html
 [numpy]: http://www.numpy.org/
-

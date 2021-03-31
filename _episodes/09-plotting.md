@@ -5,7 +5,7 @@ exercises: 15
 questions:
 - "¿Cómo puedo graficar mis datos?"
 - "¿Cómo puedo guardar mi gráfico para publicarlo?"
-objetivos:
+objectives:
 - "Crear un gráfico de serie temporal que muestre un único conjunto de datos."
 - "Crear un gráfico de dispersión que muestre la relación entre dos conjuntos de datos."
 keypoints:
@@ -51,13 +51,13 @@ import pandas as pd
 data = pd.read_csv('data/gapminder_gdp_oceania.csv', index_col='country')
 
 # Extraer el año de los 4 últimos caracteres de cada nombre de columna
-# Los nombres de columna actuales están estructurados como 'gdpPercap_(year)', 
+# Los nombres de columna actuales están estructurados como 'gdpPercap_(year)',
 # Entonces queremos mantener la parte del año (year) solo para claridad cuando grafiquemos PIB vs. años
-# Para hacer esto, usamos strip(), el cual remueve de la cadena los caracteres declarados en el argumento 
+# Para hacer esto, usamos strip(), el cual remueve de la cadena los caracteres declarados en el argumento
 # Este método funciona en cadenas, entonces llamamos str antes de strip()
 years = data.columns.str.strip('gdpPercap_')
 
-# Convertir los valores del año a enteros, guardando los resultados nuevamente en el marco de datos. 
+# Convertir los valores del año a enteros, guardando los resultados nuevamente en el marco de datos.
 
 data.columns = years.astype(int)
 
@@ -93,7 +93,7 @@ plt.ylabel('GDP per capita')
 
 ## Los datos pueden ser también graficados llamando a la función `plot` de `matplotlib`  directamente.
 *   El comando es `plt.plot(x, y)`
-*   El color / formato de los marcadores también pueden ser especificados como un argumento óptico: ejemplo. 'b-' es una linea azul, 'g--' es una linea verde discontinua. 
+*   El color / formato de los marcadores también pueden ser especificados como un argumento óptico: ejemplo. 'b-' es una linea azul, 'g--' es una linea verde discontinua.
 
 ## Obtener datos de Australia desde el marco de datos
 
@@ -126,12 +126,12 @@ plt.ylabel('GDP per capita ($)')
 {: .language-python}
 
 > ## Añadiendo una leyenda
-> 
+>
 > A menudo, al trazar múltiples conjuntos de datos en la misma figura, es deseable tener
 > una leyenda describiendo los datos.
 >
 > Esto se puede hacer en `matplotlib` en dos etapas:
-> 
+>
 > * Provee una etiqueta por cada set de datos en la figura:
 >
 > ~~~
@@ -274,7 +274,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 {: .challenge}
 
 > ## Guardando tu gráfico en un archivo
-> 
+>
 > Si estás satisfecho con el gráfico que se ve, es posible que desees guardarlo en un archivo,
 > quizás para incluirlo en una publicación. Hay una función en el
 > módulo matplotlib.pyplot que cumple con esto:
@@ -284,7 +284,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > plt.savefig('my_figure.png')
 > ~~~
 > {: .language-python}
-> 
+>
 > guardará la figura actual en el archivo `my_figure.png`. El formato de archivo
 > se deducirá automáticamente de la extensión del nombre del archivo (otros formatos
 > son pdf, ps, eps y svg).
@@ -299,7 +299,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > y `plt.savefig` no parece ser una método posible.
 > Una posibilidad para guardar la figura en el archivo es entonces
 >
-> * guardar una referencia a la figura actual en una variable local (con `plt.gcf`) 
+> * guardar una referencia a la figura actual en una variable local (con `plt.gcf`)
 > * llamar al método de la clase `savefig` desde esa variable
 >
 > ~~~
@@ -317,4 +317,3 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 > * Del mismo modo, debes hacer que los elementos de tus gráficos sean fáciles de ver. Usa `s` para aumentar el tamaño de los marcadores de tu diagrama de dispersión y `linewidth` para aumentar el tamaño de las líneas del trazado.
 > * Usar colores (y nada más) para distinguir entre diferentes elementos del gráfico hará que los trazados sean ilegibles para cualquier persona daltónica o que tenga una impresora en blanco y negro. Para líneas, el parámetro `linestyle` permite utilizar diferentes tipos de líneas. Para diagramas de dispersión, `marker` permite cambiar la forma de los puntos. Si no estás seguro acerca de tus colores, puede usar [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) o [Color Oracle](https://colororacle.org/) para simular cómo se verían tus gráficos para aquellos con daltonismo.
 {: .callout}
-
