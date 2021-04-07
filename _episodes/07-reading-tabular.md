@@ -326,12 +326,6 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > americas.T.tail(n=3)
 > > ~~~
 > >{: .language-python}
-
-
-
-
-
-
 > {: .solution}
 {: .challenge}
 
