@@ -20,18 +20,18 @@ keypoints:
 ---
 ## Cada valor tiene un tipo.
 
-* Cada valor en un programa tiene un tipo específico.
-* Entero (`int`): representa números enteros positivos o negativos como 3 o -512.
-* Número de punto flotante (`float`): representa números reales como 3.14159 o -2.5.
-* secuencia de caracteres  (usualmente llamado "string", `str`): texto.
-* Escrito entre comillas simples o comillas dobles (siempre y cuando se usen las mismas).
-* El entrecomillado no se imprimen cuando una secuencia de caracteres / cadena de texto es desplegada.
+*   Cada valor en un programa tiene un tipo específico.
+*   Entero (`int`): representa números enteros positivos o negativos como 3 o -512.
+*   Número de punto flotante (`float`): representa números reales como 3.14159 o -2.5.
+*   Secuencia de caracteres (usualmente llamado "string", `str`): texto.
+    *   Escrito entre comillas simples o comillas dobles (siempre y cuando se usen las mismas).
+    *   Las comillas no se imprimen cuando una secuencia de caracteres es mostrada.
 
 ## Use la función integrada `type` para encontrar el tipo de un valor.
 
-* Use la función integrada `type` para averiguar de que tipo es un valor.
-* Funciona también en variables.
- * Pero recuerda: el *valor* tiene el tipo --- la *variable* es solo una etiqueta.
+*   Use la función integrada `type` para averiguar de que tipo es un valor.
+*   Funciona también en variables.
+    *   Pero recuerda: el *valor* tiene el tipo --- la *variable* es solo una etiqueta.
 
 ~~~
 print(type(52))
@@ -54,7 +54,7 @@ print(type(fitness))
 
 ## Los tipos controlan qué operaciones (o métodos) se pueden realizar en un valor dado.
 
- * El tipo de un valor determina lo que el programa puede hacerle.
+*   El tipo de un valor determina lo que el programa puede hacerle.
 
 ~~~
 print(5 - 3)
@@ -108,7 +108,7 @@ print(separator)
 
 ## Las secuencias de caracteres tienen una longitud (pero los números no).
 
-*  La función incorporada `len` cuenta el número de caracteres en una secuencia de caracteres / cadena de texto.
+*   La función incorporada `len` cuenta el número de caracteres en una secuencia de caracteres / cadena de texto.
 
 ~~~
 print(len(full_name))

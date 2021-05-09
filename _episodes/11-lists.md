@@ -6,7 +6,7 @@ questions:
 - "¿Cómo puedo almacenar múltipes valores?"
 objectives:
 - "Explicar por qué los programas necesitan colecciones de valores."
-- "Escribir programa para crear listas, ordenarlas, dividirlas y modificarlas a través de asignaciones y métodos.
+- "Escribir programa para crear listas, ordenarlas, dividirlas y modificarlas a través de asignaciones y métodos."
 keypoints:
 - "Una lista almacena muchos valores en una única estructura."
 - "Usa el índice de un elemento para buscarlo en una lista."

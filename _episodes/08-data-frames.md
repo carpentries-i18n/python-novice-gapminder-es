@@ -4,7 +4,7 @@ teaching: 15
 exercises: 15
 questions: 
 - "¿Cómo puedo hacer análisis estadístico con datos tabulares?"
-objetives:
+objectives:
 - "Seleccionar valores individuales de un DataFrame de Pandas"
 - "Seleccionar filas enteras o columnas enteras de un DataFrame"
 - "Seleccionar un subconjunto de ambas filas y columnas de un DataFrame en una operación singular."
@@ -171,12 +171,14 @@ dtype: float64
 ~~~
 # Usa un subconjunto de datos para mantener la salida legible.
 subset = data.loc['Italy':'Poland', 'gdpPercap_1962':'gdpPercap_1972']
-print('Subset of data:\n', subset)
+print('Subset of data:\
+', subset)
 
 # Cuales valores son más grandes que 10000 ?
-print('\nWhere are values large?\n', subset > 10000)
-~~~
-{: .language-python}
+print('\
+Where are values large?\
+', subset > 10000)
+~~~{: .language-python}
 ~~~
 Subset of data:
              gdpPercap_1962  gdpPercap_1967  gdpPercap_1972
@@ -297,17 +299,17 @@ data.groupby(wealth_score).sum()
 ~~~
 {: .language-python}
 ~~~
-          gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \n0.000000    36916.854200    46110.918793    56850.065437    71324.848786   
+          gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \
+0.000000    36916.854200    46110.918793    56850.065437    71324.848786   
 0.333333    16790.046878    20942.456800    25744.935321    33567.667670   
 0.500000    11807.544405    14505.000150    18380.449470    21421.846200   
 1.000000   104317.277560   127332.008735   149989.154201   178000.350040   
 
-
-          gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \n0.000000    88569.346898   104459.358438   113553.768507   119649.599409   
+          gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \
+0.000000    88569.346898   104459.358438   113553.768507   119649.599409   
 0.333333    45277.839976    53860.456750    59679.634020    64436.912960   
 0.500000    25377.727380    29056.145370    31914.712050    35517.678220   
 1.000000   215162.343140   241143.412730   263388.781960   296825.131210   
-
 
           gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007  
 0.000000    92380.047256   103772.937598   118590.929863   149577.357928  
