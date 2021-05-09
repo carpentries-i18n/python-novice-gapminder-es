@@ -278,7 +278,7 @@ ya que su valor se actualiza hasta la última iteración del bucle
 > Complete los espacios en blanco para que este programa cree una nueva lista
 > que contenga ceros (0) donde los valores de la lista original eran negativos
 > y unos (1) donde los valores de la lista original eran positivos
-
+>
 > ~~~
 > original = [-1.5, 0.2, 0.4, 0.0, -1.3, 0.4]
 > result = ____

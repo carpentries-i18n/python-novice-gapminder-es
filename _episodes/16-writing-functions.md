@@ -73,7 +73,7 @@ def mostrar_fecha (year, mes, día):
 
 mostrar_fecha (1871, 3, 19) 
 ~~~
-{: .lenguaje-python}
+{: .language-python}
 ~~~
 1871/3/19
 ~~~

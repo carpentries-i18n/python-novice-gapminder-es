@@ -9,7 +9,7 @@ objectives:
 - "Usar Pandas para cargar un conjunto de datos CSV simple."
 - "Obtener información básica sobre un DataFrame de Pandas."
 keypoints:
-- "Utiliza la biblioteca Pandas para obtener estadísticas básicas de los datos tabulares".
+- "Utiliza la biblioteca Pandas para obtener estadísticas básicas de los datos tabulares."
 - "Utiliza `index_col` para especificar los valores de la columna que deben usarse como fila de encabezado."
 - "Utiliza `DataFrame.info` para obtener más información sobre un dataframe."
 - "La variable `DataFrame.columns` almacena información sobre las columnas del dataframe."
@@ -35,17 +35,17 @@ print(data)
 ~~~
 {: .language-python}
 ~~~
-       country  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \n0    Australia     10039.59564     10949.64959     12217.22686
+       country  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \
+0    Australia     10039.59564     10949.64959     12217.22686
 1  New Zealand     10556.57566     12247.39532     13175.67800
 
-
-   gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  \n0     14526.12465     16788.62948     18334.19751     19477.00928
+   gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982 \ 
+0     14526.12465     16788.62948     18334.19751     19477.00928
 1     14463.91893     16046.03728     16233.71770     17632.41040
 
-
-   gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  \n0     21888.88903     23424.76683     26997.93657     30687.75473
+   gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002 \ 
+0     21888.88903     23424.76683     26997.93657     30687.75473
 1     19007.19129     18363.32494     21050.41377     23189.80135
-
 
    gdpPercap_2007
 0     34435.36744
@@ -83,15 +83,15 @@ print(data)
 ~~~
 {: .language-python}
 ~~~
-             gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \ncountry
+             gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \
+country
 Australia       10039.59564     10949.64959     12217.22686     14526.12465
 New Zealand     10556.57566     12247.39532     13175.67800     14463.91893
 
-
-             gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \ncountry
+             gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \
+country
 Australia       16788.62948     18334.19751     19477.00928     21888.88903
 New Zealand     16046.03728     16233.71770     17632.41040     19007.19129
-
 
              gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007
 country
@@ -188,7 +188,8 @@ print(data.describe())
 ~~~
 {: .language-python}
 ~~~
-       gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \ncount        2.000000        2.000000        2.000000        2.000000
+       gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  gdpPercap_1967  \
+count        2.000000        2.000000        2.000000        2.000000
 mean     10298.085650    11598.522455    12696.452430    14495.021790
 std        365.560078      917.644806      677.727301       43.986086
 min      10039.595640    10949.649590    12217.226860    14463.918930
@@ -197,8 +198,8 @@ min      10039.595640    10949.649590    12217.226860    14463.918930
 75%      10427.330655    11922.958888    12936.065215    14510.573220
 max      10556.575660    12247.395320    13175.678000    14526.124650
 
-
-       gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \ncount         2.00000        2.000000        2.000000        2.000000
+       gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  gdpPercap_1987  \
+count         2.00000        2.000000        2.000000        2.000000
 mean      16417.33338    17283.957605    18554.709840    20448.040160
 std         525.09198     1485.263517     1304.328377     2037.668013
 min       16046.03728    16233.717700    17632.410400    19007.191290
@@ -206,7 +207,6 @@ min       16046.03728    16233.717700    17632.410400    19007.191290
 50%       16417.33338    17283.957605    18554.709840    20448.040160
 75%       16602.98143    17809.077557    19015.859560    21168.464595
 max       16788.62948    18334.197510    19477.009280    21888.889030
-
 
        gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  gdpPercap_2007
 count        2.000000        2.000000        2.000000        2.000000
@@ -264,17 +264,20 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > 
 > > La salida es entonces
 > > ~~~
-> >          continent  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \n> >country                                                               
+> >          continent  gdpPercap_1952  gdpPercap_1957  gdpPercap_1962  \
+> >country                                                               
 > >Argentina  Americas     5911.315053     6856.856212     7133.166023   
 > >Bolivia    Americas     2677.326347     2127.686326     2180.972546   
 > >Brazil     Americas     2108.944355     2487.365989     3336.585802   
 > >
-> >           gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  \n> >country                                                                     
+> >           gdpPercap_1967  gdpPercap_1972  gdpPercap_1977  gdpPercap_1982  \
+> >country                                                                     
 > >Argentina     8052.953021     9443.038526    10079.026740     8997.897412   
 > >Bolivia       2586.886053     2980.331339     3548.097832     3156.510452   
 > >Brazil        3429.864357     4985.711467     6660.118654     7030.835878   
 > >
-> >           gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  \n> >country                                                                     
+> >           gdpPercap_1987  gdpPercap_1992  gdpPercap_1997  gdpPercap_2002  \
+> >country                                                                     
 > >Argentina     9139.671389     9308.418710    10967.281950     8797.640716   
 > >Bolivia       2753.691490     2961.699694     3326.143191     3413.262690   
 > >Brazil        7807.095818     6950.283021     7957.980824     8131.212843   
@@ -303,15 +306,18 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > >{: .language-python}
 > > La salida es entonces
 > > ~~~
-> > country        Argentina  Bolivia   Brazil   Canada    Chile Colombia  \n> > gdpPercap_1997   10967.3  3326.14  7957.98  28954.9  10118.1  6117.36   
+> > country        Argentina  Bolivia   Brazil   Canada    Chile Colombia  \
+> > gdpPercap_1997   10967.3  3326.14  7957.98  28954.9  10118.1  6117.36   
 > > gdpPercap_2002   8797.64  3413.26  8131.21    33329  10778.8  5755.26   
 > > gdpPercap_2007   12779.4  3822.14   9065.8  36319.2  13171.6  7006.58   
 > > 
-> > country        Costa Rica     Cuba Dominican Republic  Ecuador    ...     \n> > gdpPercap_1997    6677.05  5431.99             3614.1  7429.46    ...      
+> > country        Costa Rica     Cuba Dominican Republic  Ecuador    ...     \
+> > gdpPercap_1997    6677.05  5431.99             3614.1  7429.46    ...      
 > > gdpPercap_2002    7723.45  6340.65            4563.81  5773.04    ...      
 > > gdpPercap_2007    9645.06   8948.1            6025.37  6873.26    ...      
 > > 
-> > country          Mexico Nicaragua   Panama Paraguay     Peru Puerto Rico  \n> > gdpPercap_1997   9767.3   2253.02  7113.69   4247.4  5838.35     16999.4   
+> > country          Mexico Nicaragua   Panama Paraguay     Peru Puerto Rico  \
+> > gdpPercap_1997   9767.3   2253.02  7113.69   4247.4  5838.35     16999.4   
 > > gdpPercap_2002  10742.4   2474.55  7356.03  3783.67  5909.02     18855.6   
 > > gdpPercap_2007  11977.6   2749.32  9809.19  4172.84  7408.91     19328.7   
 > > 
@@ -326,12 +332,6 @@ max      23424.766830    26997.936570    30687.754730    34435.367440
 > > americas.T.tail(n=3)
 > > ~~~
 > >{: .language-python}
-
-
-
-
-
-
 > {: .solution}
 {: .challenge}
 

@@ -66,10 +66,10 @@ print('all csv files in data directory:', glob.glob('data/*.csv'))
 ~~~
 {: .language-python}
 ~~~
-all csv files in data directory: ['data/gapminder_all.csv', 'data/gapminder_gdp_africa.csv', \n'data/gapminder_gdp_americas.csv', 'data/gapminder_gdp_asia.csv', 'data/gapminder_gdp_europe.csv', \n'data/gapminder_gdp_oceania.csv']
+all csv files in data directory: ['data/gapminder_all.csv', 'data/gapminder_gdp_africa.csv', \
+'data/gapminder_gdp_americas.csv', 'data/gapminder_gdp_asia.csv', 'data/gapminder_gdp_europe.csv', \
+'data/gapminder_gdp_oceania.csv']
 ~~~
-
-
 {: .output}
 
 ~~~
