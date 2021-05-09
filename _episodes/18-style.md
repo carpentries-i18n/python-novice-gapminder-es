@@ -6,7 +6,7 @@ questions:
 - "¿Cómo puedo hacer para que mis programas sean fáciles de leer?"
 - "¿Qué formato le dan la mayoría de los programadores a su código?"
 - "¿De qué forma los programas pueden verificar su propio funcionamiento?"
-objetives:
+objectives:
 - "Dar argumentos para las reglas básicas de estilo de programación."
 - "Re-formatear programas de una página para hacerlos más fáciles de leer y justificar los cambios."
 - "Seguir los estándares comunitarios de estilo de Python (PEP-8)."

@@ -5,7 +5,7 @@ exercises: 15
 questions:
 - "¿Cómo puedo graficar mis datos?"
 - "¿Cómo puedo guardar mi gráfico para publicarlo?"
-objetivos:
+objectives:
 - "Crear un gráfico de serie temporal que muestre un único conjunto de datos."
 - "Crear un gráfico de dispersión que muestre la relación entre dos conjuntos de datos."
 keypoints:
