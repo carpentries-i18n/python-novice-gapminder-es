@@ -8,3 +8,5 @@ dependencies:
   # - cxx-compiler
   # - ruby
   - rb-jekyll
+  - rb-kramdown >=2.1.0,<2.2
+  - rb-kramdown-parser-gfm

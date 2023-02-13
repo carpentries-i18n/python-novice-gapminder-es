@@ -1,0 +1,44 @@
+name: release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ maister ]
+
+jobs:
+  release:
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+        submodules: recursive
+
+
+    - uses: conda-incubator/setup-miniconda@v2
+      with:
+        python-version: 3.9
+        miniforge-variant: Mambaforge
+        channels: conda-forge,nodefaults
+        channel-priority: true
+        activate-environment: swc-python-novice-gapminder-es
+        environment-file: conda/dev.yaml
+
+    - name: build code
+      run: make site
+
+    - name: GitHub Pages action
+      if: ${{ github.event_name == 'workflow_dispatch' }}
+      uses: peaceiris/actions-gh-pages@v3.5.9
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./_site/
