@@ -1,0 +1,10 @@
+name: swc-python-novice-gapminder-es
+channels:
+  - nodefaults
+  - conda-forge
+dependencies:
+  # - c-compiler
+  # - compilers
+  # - cxx-compiler
+  # - ruby
+  - rb-jekyll
